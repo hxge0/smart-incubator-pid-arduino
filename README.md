@@ -91,7 +91,7 @@ W celu poprawnego sformułowania algorytmu i jego implementacji wspomogliśmy si
 
 ## 5. Instrukcja Obsługi i Uruchomienia
 
-1. Proszę otworzyć przeglądarkę internetową i wejść w link do symulatora online Wokwi: https://wokwi.com/projects/465000200739658753.
+1. Proszę wejść w link do symulatora online Wokwi: https://wokwi.com/projects/465000200739658753.
 2. Proszę kliknąć zielony przycisk uruchomienia (Play) w górnej części ekranu.
 3. Symulator w godzinach popołudniowych może być mocno obciążony, więc czasami trzeba chwilę poczekać w kolejce. Po zainicjowaniu systemu na ekranie LCD pojawi się aktualna temperatura oraz procentowa moc grzania. 
 4. Testowanie układu: Proszę kliknąć na czujnik DHT22. Następnie proszę użyć suwaka temperatury, który pojawi się po kliknięciu na czujnik: Później ustawić temperaturę na niską i sukcesywnie ją zwiększać do poziomu 37.5. Wszystkie zmiany będzie widać w logach na dole ekranu.
