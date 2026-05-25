@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "author": "Krzysztof Falandysz, Aleksander Drozdowicz",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 39, "left": -19.8, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -80,
+      "left": 370.4,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": 288.2, "left": 326.4, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -105.3, "left": -82.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "dht1:GND", "uno:GND.2", "black", [ "v240", "h216.9" ] ],
+    [ "dht1:SDA", "uno:2", "green", [ "v19.2", "h303.2" ] ],
+    [ "dht1:VCC", "uno:5V", "red", [ "v249.6", "h207.4" ] ],
+    [ "lcd1:GND", "uno:GND.2", "black", [ "h-67.2", "v316.8", "h-147.9" ] ],
+    [ "lcd1:VCC", "uno:5V", "red", [ "h-57.6", "v316.9", "h-167" ] ],
+    [ "lcd1:SDA", "uno:A4", "green", [ "h-48", "v326.6", "h-90.6" ] ],
+    [ "lcd1:SCL", "uno:A5", "green", [ "h-38.4", "v307.5", "h-90.7" ] ],
+    [ "relay1:GND", "uno:GND.3", "black", [ "h0" ] ],
+    [ "relay1:IN", "uno:3", "green", [ "h-48", "v-307.4", "h-71.2" ] ],
+    [ "relay1:VCC", "uno:5V", "red", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
